@@ -18,8 +18,7 @@ class simple_BPMN_choreography(arc4.ARC4Contract):
         # Admin account
         self.admin = GlobalState(Account)
         
-        self.party_a = GlobalState(Account("C3YYRKG4UNNWRGZAUZ5U5NEUSL5A23IKZE3LQNBWO64HJFBAQLLTS7QZCQ")
-)
+        self.party_a = GlobalState(Account("C3YYRKG4UNNWRGZAUZ5U5NEUSL5A23IKZE3LQNBWO64HJFBAQLLTS7QZCQ"))
         self.party_b = GlobalState(Account("VIIMQ37AU72TQM4KKAR76BDHG5DCO3HUUJYNVIZLMJBPXMXRQWPEAAWGZA"))
         self.party_c = GlobalState(Account("W6WNRQA3WUW7KR2UBQD4RSLSX6VD745Z62S4N6FPKWC36NDWO3NYIV7D6E"))  
 
@@ -41,6 +40,7 @@ class simple_BPMN_choreography(arc4.ARC4Contract):
         # Locking variable
         self.locked = GlobalState(UInt64(0))  # 0 = unlocked, 1 = locked
         self.update_policy = GlobalState(UInt64(0))  # 0 = update disabled, 1 = update enabled
+
     @arc4.baremethod(create="allow")
     def create(self) -> None:
         """Initialize the choreography instance."""
@@ -140,9 +140,7 @@ class simple_BPMN_choreography(arc4.ARC4Contract):
         self.e6.value = UInt64(0)
         self.msg4_payload_k.value = UInt64(0)
         self.msg3_payload_z.value = UInt64(0)
-        self.party_c.value = Account(
-            "OWSIGW6NHIYMNMP7ZA53Z23GTRDXZYB3TGDPH5LH5TI3QBHDWIH775ZZLE"
-        )
+        self.party_c.value = Account("OWSIGW6NHIYMNMP7ZA53Z23GTRDXZYB3TGDPH5LH5TI3QBHDWIH775ZZLE")
         # Removed variables
         del self.msg2_payload_y.value
         log(Bytes(b"Contract variables updated successfully"))
