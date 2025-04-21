@@ -1,5 +1,4 @@
 # Flexible-Business-processes on Algorad
-
 This project demonstrates a modular and upgradeable smart contract-based choreography engine for executing Business Process Model and Notation (BPMN)-inspired workflows using the Algorand blockchain. The approach focuses on process flexibility, formal modularity, and seamless upgrades, providing a lightweight yet scalable solution for collaborative business logic execution.
 ---
 
@@ -40,22 +39,6 @@ The smart contract models a BPMN choreography with the following:
 
 📊 Cost Analysis
 Execution costs are negligible due to Algorand's low fixed-fee model. In all five tested scenarios, the transaction costs remained well under a fraction of a cent (USD), ensuring scalability and economic feasibility even at large volumes.
-
-📂 Project Structure
-text
-Copy
-Edit
-smart_contracts/
-│
-├── choreography/
-│   └── simple_BPMN_choreography.py  # AlgoPy contract logic
-│
-├── artifacts/
-│   └── choreography/
-│       └── simple_BPMN_choreography_client.py  # Auto-generated client interface
-│
-├── deploy_config.py  # Deployment logic using AlgoKit
-└── __main__.py       # Entrypoint for running deployment
 
 ### Pre-requisites
 
