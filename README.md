@@ -1,13 +1,10 @@
-# Flexible-Business-processes
+# Flexible-Business-processes on Algorad
 
-# Simple BPMN Choreography Smart Contract on Algorand
-
-This project implements a simplified Business Process Model and Notation (BPMN) choreography pattern as a smart contract on Algorand Blockchain. It defines a message-passing choreography between two parties, `Party A` and `Party B` and more in the updated choreography.
-
+This project demonstrates a modular and upgradeable smart contract-based choreography engine for executing Business Process Model and Notation (BPMN)-inspired workflows using the Algorand blockchain. The approach focuses on process flexibility, formal modularity, and seamless upgrades, providing a lightweight yet scalable solution for collaborative business logic execution.
 ---
 
-## 🧠 Overview
-
+# Overview
+Traditional BPM platforms face challenges in modularity, upgradability, and managing stateful logic across versions. This project presents a novel smart contract that enables dynamic, rule-based execution of business processes with native upgrade paths — all while remaining cost-effective on-chain.
 The smart contract models a BPMN choreography with the following:
 
 ### Participants
@@ -15,6 +12,7 @@ The smart contract models a BPMN choreography with the following:
 - **Party A**: Initiates the process by sending `msg1`.
 - **Party B**: Responds with `msg2` if the process conditionally branches to `task2`.
 - **party C**: Responds with `msg3` if the process conditionally branches to `task3`.
+
 
 ### BPMN Flow Elements
 - `start1`: Begins the process.
@@ -26,10 +24,38 @@ The smart contract models a BPMN choreography with the following:
 - `end2`: Alternate completion.
 
 ---
+# Key Features
+✅ BPMN-like choreography execution
+
+🔄 Rule-driven process control flow with branching and ending conditions
+
+🔐 Role-based access (Party A and B)
+
+⚡ Efficient state transitions using edge-marking
+
+🔧 Upgrade and delete support with admin control
+
+💰 Cost-efficient execution on Algorand
 
 
+📊 Cost Analysis
+Execution costs are negligible due to Algorand's low fixed-fee model. In all five tested scenarios, the transaction costs remained well under a fraction of a cent (USD), ensuring scalability and economic feasibility even at large volumes.
 
-
+📂 Project Structure
+text
+Copy
+Edit
+smart_contracts/
+│
+├── choreography/
+│   └── simple_BPMN_choreography.py  # AlgoPy contract logic
+│
+├── artifacts/
+│   └── choreography/
+│       └── simple_BPMN_choreography_client.py  # Auto-generated client interface
+│
+├── deploy_config.py  # Deployment logic using AlgoKit
+└── __main__.py       # Entrypoint for running deployment
 
 ### Pre-requisites
 

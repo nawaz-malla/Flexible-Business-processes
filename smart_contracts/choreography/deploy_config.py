@@ -40,6 +40,4 @@ def deploy() -> None:
         f"({app_client.app_id}) at address {app_client.app_address}"
     )
 
-    # Optionally call any method here (e.g., task1 or execute)
-    # Example:
-    # app_client.send.execute()
+    
