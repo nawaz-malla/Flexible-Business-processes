@@ -1,9 +1,9 @@
 # Flexible-Business-processes on Algorand
-This project demonstrates a modular and upgradeable smart contract-based choreography engine for executing Business Process Model and Notation (BPMN)-inspired workflows using the Algorand blockchain. The approach focuses on process flexibility, formal modularity, and seamless upgrades, providing a lightweight yet scalable solution for collaborative business logic execution.
----
+The project is demonstartes the implementation of Flexible business processes on Algorand blockchain using Algorad python programming language.
 
 # Overview
 Traditional BPM platforms face challenges in modularity, upgradability, and managing stateful logic across versions. This project presents a novel smart contract that enables dynamic, rule-based execution of business processes with native upgrade paths — all while remaining cost-effective on-chain.
+This project demonstrates a modular and upgradeable smart contract-based choreography engine for executing Business Process Model and Notation (BPMN)-inspired workflows using the Algorand blockchain. The approach focuses on process flexibility, formal modularity, and seamless upgrades, providing a lightweight yet scalable solution for collaborative business logic execution.
 The smart contract models a BPMN choreography with the following:
 
 ### Participants
